@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Example</title>
+  </head>
+  <body>
+    <div id="container">
+      <p id="text">This is a paragraph.</p>
+      <button id="btn">Click me</button>
+    </div>
+
+    <script>
+      // DOM methods and properties
+      let container = document.getElementById("container");
+      let paragraph = document.getElementById("text");
+      let button = document.getElementById("btn");
+
+      container.style.backgroundColor = "lightblue";
+      paragraph.textContent = "This paragraph has been updated.";
+      button.addEventListener("click", function () {
+        alert("Button clicked!");
+      });
+    </script>
+  </body>
+</html>

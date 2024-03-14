@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events Example</title>
+  </head>
+  <body>
+    <button id="btn">Click me</button>
+    <form id="form">
+      <input type="text" id="input" placeholder="Type something..." />
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      // Events
+      let button = document.getElementById("btn");
+      let form = document.getElementById("form");
+
+      button.addEventListener("click", function () {
+        console.log("Button clicked!");
+      });
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent default form submission
+        let inputValue = document.getElementById("input").value;
+        console.log("Form submitted with value:", inputValue);
+      });
+    </script>
+  </body>
+</html>

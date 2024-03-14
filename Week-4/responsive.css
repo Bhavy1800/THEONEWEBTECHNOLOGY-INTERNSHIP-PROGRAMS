@@ -1,0 +1,120 @@
+@media only screen and (max-width: 1170px) {
+    .nav-list li a {
+        margin: 0 5px;
+    }
+
+    .navbar {
+        padding: 20px 0;
+    }
+
+}
+
+@media only screen and (max-width: 1048px) {
+    body {
+        font-size: 45%;
+    }
+
+    .nav-list li a {
+        margin: 0;
+    }
+
+    .navbar {
+        padding: 20px 0;
+    }
+
+    .search {
+        width: 185px !important;
+    }
+
+    .nav-list .search input {
+        width: 110px;
+        padding: 10px;
+    }
+}
+
+
+@media only screen and (max-width : 818px) {
+    body {
+        font-size: 45%;
+    }
+
+    .nav-list li a {
+        padding-left: 6px;
+    }
+    .header .logo{
+        width: 10rem;
+        height: auto;
+    }
+    .header .logo img {
+        width: 23%;
+        /* height: 100%; */
+        /* padding-bottom: 1rem; */
+    }
+
+    .navbar {
+        display: block;
+        transition: all.3s ease-in-out;
+    }
+
+    .nav-list {
+        height: 200px;
+        width: 100%;
+        flex-direction: column;
+        margin: 1rem auto;
+        padding: 10px 0;
+        z-index: 10;
+        /* background-color: var(--secondary-color); */
+        transition: all.5s ease;
+    }
+
+    .burger {
+        display: block;
+        position: absolute;
+        right: 12%;
+        top: 35px;
+        transition: all .5s ease;
+    }
+
+    .h-nav-resp {
+        display: block;
+        height: 90px;
+        transition: all .5s ease;
+    }
+
+    .v-class-resp {
+        opacity: 0;
+        transition: all.5s ease;
+    }
+
+    /* hero start  */
+    .hero .hero-text{
+        flex: 100%;
+    }
+    .hero .hero-img {
+        flex: 100%;
+    }
+    /* services start  */
+    .service-card{
+        flex: 100%;
+    }
+    .service-card .service-icon{
+        left: 50%;
+        margin-right:4rem;
+    }
+    /* about start  */
+    .container-box .box-img{
+        flex: 100%;
+    }
+    .container-box .box-text{
+        flex: 100%;
+    }
+    /* project start  */
+    .project-box{
+        flex: 45%;
+    }
+    /* contect start  */
+    .form-box{
+        width: 100%;
+    }
+    
+}
